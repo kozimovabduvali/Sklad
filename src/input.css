@@ -5,10 +5,12 @@
   --font-onest: "Onest";
   --font-inter: "Inter";
   --text-main-15: 15px;
+  --text-main-40: 40px;
   --color-primary: #031343;
   --color-brand-primary: #f2f2f3;
   --color-brand-gray: #7c7c7c;
   --color-brand-greed: #fb4848;
+  --color-brand-yellow: #FFF4C3;
   --color-brand-blue: #258ffb;
   --color-brand-blue-200: #b6c1dd;
   --color-brand-blue-300: #009eff;
@@ -20,7 +22,7 @@
     @apply scroll-smooth;
   }
   body {
-    @apply font-onest overflow-x-hidden bg-brand-primary text-primary;
+    @apply font-onest overflow-x-hidden bg-brand-primary text-primary !leading-none;
   }
   button {
     @apply cursor-pointer;
@@ -49,4 +51,20 @@
 
 @utility hover-opacity-75 {
   @apply transition duration-200 hover:opacity-75;
+}
+
+
+@utility hover-primary-75 {
+  @apply bg-primary transition duration-200 hover:bg-primary/75;
+}
+@utility hover-blue-75 {
+  @apply bg-brand-blue transition duration-200 hover:bg-brand-blue/75;
+}
+
+@utility hover-border-blue {
+  @apply border border-transparent transition duration-200 hover:border-brand-blue
+}
+
+@utility main-gradient-blue {
+  background: linear-gradient(100.68deg, #258ffb 1.99%, #117be7 94.99%);
 }
