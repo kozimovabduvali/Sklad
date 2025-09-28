@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -71,6 +71,141 @@
             Контакты
           </a>
         </nav>
+      </div>
+      <!-- Center -->
+      <div class="flex items-center justify-between gap-3 my-3">
+        <!-- Logo -->
+        <a href="#" class="inline-block shrink-0">
+          <img class="h-10.25" src="./assets/icons/logo.png" alt="logo">
+        </a>
+        <!-- Каталог -->
+        <button
+          class="bg-brand-blue text-white flex items-center gap-2.5 rounded-xl h-12 px-6 py-3.75 hover-opacity-75">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M6.1998 0.799805H1.6998C1.20275 0.799805 0.799805 1.20275 0.799805 1.6998V6.1998C0.799805 6.69686 1.20275 7.0998 1.6998 7.0998H6.1998C6.69686 7.0998 7.0998 6.69686 7.0998 6.1998V1.6998C7.0998 1.20275 6.69686 0.799805 6.1998 0.799805Z"
+              fill="white" />
+            <path
+              d="M14.2998 0.799805H9.7998C9.30275 0.799805 8.8998 1.20275 8.8998 1.6998V6.1998C8.8998 6.69686 9.30275 7.0998 9.7998 7.0998H14.2998C14.7969 7.0998 15.1998 6.69686 15.1998 6.1998V1.6998C15.1998 1.20275 14.7969 0.799805 14.2998 0.799805Z"
+              fill="white" />
+            <path
+              d="M14.2998 8.8998H9.7998C9.30275 8.8998 8.8998 9.30275 8.8998 9.7998V14.2998C8.8998 14.7969 9.30275 15.1998 9.7998 15.1998H14.2998C14.7969 15.1998 15.1998 14.7969 15.1998 14.2998V9.7998C15.1998 9.30275 14.7969 8.8998 14.2998 8.8998Z"
+              fill="white" />
+            <path
+              d="M6.1998 8.8998H1.6998C1.20275 8.8998 0.799805 9.30275 0.799805 9.7998V14.2998C0.799805 14.7969 1.20275 15.1998 1.6998 15.1998H6.1998C6.69686 15.1998 7.0998 14.7969 7.0998 14.2998V9.7998C7.0998 9.30275 6.69686 8.8998 6.1998 8.8998Z"
+              fill="white" />
+          </svg>
+          <span class="font-medium">
+            Каталог
+          </span>
+        </button>
+
+        <!-- Что будем искать? -->
+        <div class="relative w-full max-w-131">
+          <input type="text" name="search" id="search" placeholder="Что будем искать?"
+            class="bg-white placeholder:text-brand-gray border border-transparent rounded-xl text-sm min-h-12 w-full  focus:border-brand-blue-200 outline-none px-4 py-3">
+
+          <div class="absolute top-1/2 -translate-y-1/2 right-4">
+            <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M17.1426 17L13.3204 13.1778M15.3648 8.11111C15.3648 12.0385 12.181 15.2222 8.25369 15.2222C4.32633 15.2222 1.14258 12.0385 1.14258 8.11111C1.14258 4.18375 4.32633 1 8.25369 1C12.181 1 15.3648 4.18375 15.3648 8.11111Z"
+                stroke="#258FFB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+        </div>
+
+        <!-- Перезвонить мне -->
+        <div>
+          <a href="#" class="font-medium hover-opacity-75 flex items-center gap-2 mb-0.25">
+            <img class="shrink-0 size-5.5" src="./assets/gif/phone.gif" alt="phone gif">
+            <p class="text-lg">
+              8 <span class="text-brand-blue">(</span>800<span class="text-brand-blue">)</span> 201-80-04
+            </p>
+          </a>
+
+          <div class="flex items-center gap-4">
+            <a href="#"
+              class="underline uppercase hover-opacity-75 text-xs text-brand-blue-300 block min-h-3 pr-4 border-r border-brand-blue-200">
+              Перезвонить мне
+            </a>
+
+            <div class="flex items-center gap-1">
+              <a href="#" class="shrink-0 hover-opacity-75">
+                <img src="./assets/icons/whats-app.svg" alt="icon">
+              </a>
+              <a href="#" class="shrink-0 hover-opacity-75">
+                <img src="./assets/icons/telegram.svg" alt="icon">
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Links -->
+        <div class="text-xs flex items-center gap-2">
+          <!-- 1 -->
+          <a href="#" class="flex flex-col items-center gap-2 relative hover-opacity-75">
+            <div
+              class="absolute top-0 right-2 z-10 size-4.5 flex items-center justify-center bg-brand-red text-white rounded-full">
+              <span class="text-xs font-medium leading-0">2</span>
+            </div>
+            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18.5 20.5V10.5M12.5 20.5V4.5M6.5 20.5V14.5" stroke="#031343" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <span class="font-inter text-brand-gray text-xs">
+              Сравнить
+            </span>
+          </a>
+          <!-- 2 -->
+          <a href="#" class="flex flex-col items-center gap-2 relative hover-opacity-75">
+            <div
+              class="absolute top-0 right-2 z-10 size-4.5 flex items-center justify-center bg-brand-red text-white rounded-full">
+              <span class="text-xs font-medium leading-0">0</span>
+            </div>
+            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M19.15 14.5C20.5655 13.04 22 11.29 22 9C22 7.54131 21.4495 6.14236 20.4696 5.11091C19.4898 4.07946 18.1608 3.5 16.775 3.5C15.103 3.5 13.925 4 12.5 5.5C11.075 4 9.897 3.5 8.225 3.5C6.83924 3.5 5.51024 4.07946 4.53037 5.11091C3.55049 6.14236 3 7.54131 3 9C3 11.3 4.425 13.05 5.85 14.5L12.5 21.5L19.15 14.5Z"
+                stroke="#031343" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <span class="font-inter text-brand-gray text-xs">
+              Избранное
+            </span>
+          </a>
+          <!-- 3 -->
+          <a href="#" class="flex flex-col items-center gap-2 relative hover-opacity-75">
+            <div
+              class="absolute top-0 right-2 z-10 size-4.5 flex items-center justify-center bg-brand-red text-white rounded-full">
+              <span class="text-xs font-medium leading-0">2</span>
+            </div>
+            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_11_2197)">
+                <path
+                  d="M3.16699 3.16699H5.163L7.81769 14.9951C7.91507 15.4283 8.16766 15.8156 8.53197 16.0902C8.89629 16.3649 9.34953 16.5097 9.8137 16.4999H19.5742C20.0284 16.4992 20.4689 16.3506 20.8227 16.0788C21.1765 15.8069 21.4226 15.428 21.5203 15.0047L23.167 7.92873H6.23086"
+                  stroke="#031343" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M9.5 22.5C10.0523 22.5 10.5 22.0523 10.5 21.5C10.5 20.9477 10.0523 20.5 9.5 20.5C8.94772 20.5 8.5 20.9477 8.5 21.5C8.5 22.0523 8.94772 22.5 9.5 22.5Z"
+                  fill="#031343" />
+                <path
+                  d="M20.5 22.5C21.0523 22.5 21.5 22.0523 21.5 21.5C21.5 20.9477 21.0523 20.5 20.5 20.5C19.9477 20.5 19.5 20.9477 19.5 21.5C19.5 22.0523 19.9477 22.5 20.5 22.5Z"
+                  fill="#031343" />
+                <path
+                  d="M9.5 22.5C10.0523 22.5 10.5 22.0523 10.5 21.5C10.5 20.9477 10.0523 20.5 9.5 20.5C8.94772 20.5 8.5 20.9477 8.5 21.5C8.5 22.0523 8.94772 22.5 9.5 22.5Z"
+                  stroke="#031343" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M20.5 22.5C21.0523 22.5 21.5 22.0523 21.5 21.5C21.5 20.9477 21.0523 20.5 20.5 20.5C19.9477 20.5 19.5 20.9477 19.5 21.5C19.5 22.0523 19.9477 22.5 20.5 22.5Z"
+                  stroke="#031343" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+              <defs>
+                <clipPath id="clip0_11_2197">
+                  <rect width="24" height="24" fill="white" transform="translate(0.5 0.5)" />
+                </clipPath>
+              </defs>
+            </svg>
+            <span class="font-inter text-brand-gray text-xs">
+              Корзина
+            </span>
+          </a>
+        </div>
       </div>
     </div>
   </header>
