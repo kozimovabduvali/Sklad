@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+  --font-onest: "Onest";
+  --color-primary: #031343;
+  --color-brand-primary: #f2f2f3;
+  --color-brand-gray: #7c7c7c;
+  --color-brand-greed: #fb4848;
+  --color-brand-blue: #258ffb;
+  --color-brand-red: #f53535;
+  --color-brand-blue-200: #b6c1dd;
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+  body {
+    @apply font-onest overflow-x-hidden bg-brand-primary;
+  }
+  button {
+    @apply cursor-pointer;
+  }
+
+  .text-xs,
+  .text-sm,
+  .text-base,
+  .text-lg,
+  .text-xl,
+  .text-2xl,
+  .text-3xl,
+  .text-4xl,
+  .text-5xl,
+  .text-6xl,
+  .text-7xl,
+  .text-8xl,
+  .text-9xl {
+    @apply leading-none;
+  }
+}
+
+@utility container-base {
+  @apply w-full max-w-329 mx-auto px-4.5;
+}
+
+@utility hover-opacity-75 {
+  @apply transition duration-200 hover:opacity-75;
+}
