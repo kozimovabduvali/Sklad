@@ -4,6 +4,11 @@
 
 let swiper = new Swiper(".sklad-hero__swiper", {
   spaceBetween: 15,
+  effect: "fade",
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  },
 
   navigation: {
     nextEl: ".swiper-button-next__main__hero",

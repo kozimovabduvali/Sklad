@@ -10,7 +10,7 @@
   --color-brand-primary: #f2f2f3;
   --color-brand-gray: #7c7c7c;
   --color-brand-greed: #fb4848;
-  --color-brand-yellow: #FFF4C3;
+  --color-brand-yellow: #fff4c3;
   --color-brand-blue: #258ffb;
   --color-brand-blue-200: #b6c1dd;
   --color-brand-blue-300: #009eff;
@@ -53,7 +53,6 @@
   @apply transition duration-200 hover:opacity-75;
 }
 
-
 @utility hover-primary-75 {
   @apply bg-primary transition duration-200 hover:bg-primary/75;
 }
@@ -62,9 +61,15 @@
 }
 
 @utility hover-border-blue {
-  @apply border border-transparent transition duration-200 hover:border-brand-blue
+  @apply border border-transparent transition duration-200 hover:border-brand-blue hover:text-brand-blue;
 }
 
 @utility main-gradient-blue {
   background: linear-gradient(100.68deg, #258ffb 1.99%, #117be7 94.99%);
+}
+
+
+/* Scroll styles */
+.no-scroll::-webkit-scrollbar {
+  @apply h-0 w-0;
 }
