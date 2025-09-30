@@ -5,6 +5,7 @@
   --font-onest: "Onest";
   --font-inter: "Inter";
   --text-main-15: 15px;
+  --text-main-22: 22px;
   --text-main-40: 40px;
   --color-primary: #031343;
   --color-brand-primary: #f2f2f3;
@@ -58,6 +59,10 @@
 }
 @utility hover-blue-75 {
   @apply bg-brand-blue transition duration-200 hover:bg-brand-blue/75;
+}
+
+@utility hover-greed-75 {
+  @apply bg-brand-greed transition duration-200 hover:bg-brand-greed/75;
 }
 
 @utility hover-border-blue {
